@@ -1,35 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homepage.css">
     <title>Du Lịch Việt Nam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    <img src="images/logo.png" alt="Logo">
-    <h2>Hướng dẫn Mũi Né: Làm gì? Các điểm tham quan hàng đầu</h2>
-    <p>Geography Mui Ne is inherently the name of a cape protruding into the sea, the name of a sea cape in Phan Thiet city, Binh Thuan province, Vietnam. This is a famous tourist center of Binh Thuan province and one of the national tourist areas of Vietnam 198km from Ho...</p>
+    <div class="row">
+        <!--Logo tiêu đề-->
+        <div class="header col-12 active">
+            <div class="wrap  col-10">
+                <div class="logo col-3">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="search01 col-2">
+                    <div class="slide uncag col-12">
+                        <a href="#">Uncategorized</a>
+                        <ul class="sub sub2">
+                            <li id="icon01">
+                                <span id="dauTK"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide switch col-12">
+                        <input type="header-search" id="header-search" placeholder="Search..." />
+                        <ul class="sub sub1">
+                            <li id="icon02">
+                                <span id="dauX"><i class="fa-solid fa-x"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <h2>Hướng dẫn Hà Nội: Làm gì? Các điểm tham quan hàng đầu</h2>
-    <p>Vị trí Địa lý Nằm ở phía Bắc Việt Nam, Hà Nội là một thành phố xinh đẹp không thể bỏ qua trong chuyến hành trình dọc đất nước xinh đẹp này. Tuy nhiên, làm thế nào để khám phá thành phố thủ đô này của Việt Nam có thể sẽ thách thức bạn khi là khách du lịch lần đầu đến đây. Hôm nay, chúng tôi sẽ giúp bạn với ...</p>
+        <div class="wraper col-12">
+            <div class="contanier col-10" style="padding: 0;">
+                <div class="content col-9">
+                    <!-- Đoạn văn 1 -->
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Mui Ne Guide: What to do ? Top Attractions</h2>
+                        </a>
+                        <p>Geography Mui Ne is inherently the name of a cape protruding into the sea, the name of a sea cape in Phan Thiet city, Binh Thuan province, Vietnam. This is a famous tourist center of Binh Thuan province and one of the national
+                            tourist areas of Vietnam 198km from Ho...</p>
+                        <div class="image">
+                            <img src="images/muine.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Đoạn văn 2 -->
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Hanoi Guide: What to do ? Top Attractions</h2>
+                        </a>
+                        <p>Geography Located in the north of Viet Nam, Hanoi is a beautiful city that cannot be missed out from the journey along this beautiful country. Yet, how to explore this capital city of Vietnam might challenge you as a first-time
+                            tourist here. Today, we’ll help you with...</p>
+                        <div class="image">
+                            <img src="images/hanoi.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Đoạn văn 3 -->
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Ho Chi Minh City Guide: What to do ? Top Attractions & Restaurants</h2>
+                        </a>
+                        <p>The destination that I would like to introduce today, which is also Vietnam’s economic center, is Ho Chi Minh City, also known as Saigon. Saigon played a pivotal role during the tumultuous years of the Vietnam War and was also
+                            a historical witness to the...</p>
+                        <div class="image">
+                            <img src="images/hochiminhcity.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Đoạn văn 4 -->
+                    <div class="p1">
+                        <!-- Tiêu đề có đính kèm link -->
+                        <a href="MaiChauVN.html">
+                            <h2>Mai Chau Vietnam | Travel Guide</h2>
+                        </a>
+                        <!-- Đoạn văn -->
+                        <p>Mai Chau is one of the most popular destinations in North-East Vietnam. Situated at only 140km from Ha Noi, the Mai Chau valley is the ideal weekend getaway to skip the Vietnamese capital’s overwhelming heat. Mai Chau is 800m-900m
+                            above the sea level,...</p>
+                        <!-- Hình ảnh -->
+                        <div class="image">
+                            <img src="images/MaiChau.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Đoạn văn 5 -->
+                    <div class="p1 ">
+                        <a href="#">
+                            <h2>Ho Chi Minh City’s Map and Must-see attractions</h2>
+                        </a>
+                        <p>Here is the map of Ho Chi Minh City (or Saigon) to help you discover this southern city.</p>
+                        <div class="image">
+                            <img src="images/hcmcitymap.png" alt="">
+                        </div>
+                    </div>
+                    <!--Đoạn văn 6-->
+                    <div class="p1 ">
+                        <a href="#">
+                            <h2>Hanoi’s city map and Must-see attractions</h2>
+                        </a>
+                        <p>Discover Hanoi’s map below and discover its main sightseeing attractions</p>
+                        <div class="image">
+                            <img src="images/hnmap.png" alt="">
+                        </div>
+                    </div>
 
-    <h2>Hồ Chí Minh Hướng dẫn: Làm gì? Các điểm tham quan & nhà hàng hàng đầu</h2>
-    <p>Điểm đến mà tôi muốn giới thiệu hôm nay, cũng là trung tâm kinh tế của Việt Nam, đó là Thành phố Hồ Chí Minh hay còn gọi là Sài Gòn. Sài Gòn đóng vai trò then chốt trong những năm tháng đầy biến động của Chiến tranh Việt Nam và cũng là nhân chứng lịch sử cho ...</p>
 
-    <a href="MaiChauVN.html" style="text-decoration: none">
-        <h2 style="color: black;">Mai Châu Việt Nam | Hướng dẫn viên du lịch</h2>
-    </a>
-    <p>Mai Châu là một trong những điểm đến nổi tiếng nhất ở Đông Bắc Việt Nam. Chỉ cách thủ đô Hà Nội 140km, thung lũng Mai Châu là nơi nghỉ ngơi lý tưởng vào cuối tuần để bỏ qua cái nóng oi bức của thủ đô Việt Nam. Mai Châu có độ cao 800m-900m so với mực nước biển, ...</p>
-    <a href="MaiChauVN.html">
-        <img  src="images/MaiChau.jpg" alt="ảnh Mai Châu">
-    </a>
+                    <div class="other col-10">
+                        <a href="">Other entries</a>
+                    </div>
+                </div>
+                <div class="nav col-n ">
+                    <div class="search col-12">
+                        <input type="text">
+                        <button>SEARCH</button>
+                    </div>
 
-    <h2>Bản đồ Thành phố Hồ Chí Minh và các điểm tham quan không thể bỏ qua</h2>
-    <p>Dưới đây là bản đồ Thành phố Hồ Chí Minh (hoặc Sài Gòn) giúp bạn khám phá thành phố phía Nam này.</p>
+                    <div class="title col-12 ">
+                        <h2>Recent post</h2>
+                    </div>
+                    <ul class="col-12 ">
+                        <li class="il ">
+                            <a href="# ">
+                                Mui Ne Guide: What to do ? Top Attractions
+                        </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <p>Hanoi Guide: What to do ? Top Attractions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <p>Ho Chi Minh City Guide: What to do ? Top Attractions & Restaurants</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <p>Mai Châu Vietnam | Travel Guide</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <p>Ho Chi Minh City's Map and Must-see attractions</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer col-12 ">
+            <div class="topF col-10 ">
+                <div class="leftF col-9 ">
+                    <div class="dong1 ">
+                        <p>Bài tập lớn nhóm 21</p>
+                    </div>
+                    <div class="nav ">
+                        <ul class="main-menu ">
+                            <li class="li_01 ">
+                                <a href="homepage.html "> Trang chủ</a>
 
-    <h2>Bản đồ thành phố Hà Nội và các điểm tham quan không thể bỏ qua</h2>
-    <p>Khám phá bản đồ Hà Nội dưới đây và khám phá các điểm tham quan chính của nó</p>
+                            </li>
+
+                            <li>
+                                <p>|</p>
+                            </li>
+
+                            <li class="li_02 ">
+                                <a href="# ">Trang của Khánh</a>
+
+                            </li>
+
+                            <li>
+                                <p>|</p>
+                            </li>
+
+                            <li class="li_03 ">
+                                <a href="MaiChauVN.html ">Trang của Duy</a>
+
+                            </li>
+
+                            <li>
+                                <p>|</p>
+                            </li>
+
+                            <li class="li_04 ">
+                                <a href="# ">Trang của Hoàng</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightF col-3 ">
+                    <li class="li01 ">
+                        <i class="fa-brands fa-facebook "></i>
+                    </li>
+                    <li class="li02 ">
+                        <i class="fa-brands fa-youtube "></i>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js "></script>
 </body>
+
 </html>

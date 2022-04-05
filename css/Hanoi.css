@@ -93,8 +93,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: #fff;
-    transition: 1s;
+    z-index: 2;
 }
 
 .header .wrap {
@@ -109,134 +112,34 @@
     height: 40px;
 }
 
-.header .wrap .search01 {
+.header .wrap .search {
     height: 50px;
 }
 
-.header .wrap .search01 * {
+.header .wrap .search * {
     float: left;
+    text-align: center;
 }
 
-.header .wrap .search01 a {
+.header .wrap .search a {
     text-decoration: none;
     font-size: 17px;
     color: #333;
     padding: 5px;
 }
 
-.header .wrap .search01 i {
+.header .wrap .search i {
     margin: 5px;
     font-size: 17px;
     color: #333;
     padding: 5px;
     line-height: 0.8;
-}
-
-.header .wrap .search01 .uncag .sub {
-    list-style-type: none;
-}
-
-.header .wrap .search01 .uncag {
-    position: absolute;
-}
-
-.header .wrap .search01 .switch {
-    display: flex;
-    margin: 0;
-}
-
-#header-search {
-    width: 118px;
-}
-
-.header .wrap .search01 input {
-    text-decoration: none;
-    font-size: 17px;
-    color: #333;
-    padding: 5px;
-    border: 0;
-    width: 70%;
-}
-
-.header .wrap .search01 .switch i {
-    margin: 5px;
-    font-size: 17px;
-    color: #333;
-    padding: 5px;
-    line-height: 0.8;
-}
-
-.header .wrap .search01 a:hover {
-    color: grey;
-}
-
-.header .wrap .search01 i:hover {
-    color: aqua
-}
-
-.header .wrap .search01 .slide {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.header .wrap .search01 .uncag {
-    opacity: 1;
-    visibility: visible;
-}
-
-.disappear {
-    animation: disappear 1s;
-}
-
-@keyframes disappear {
-    from {
-        transform: translateY(0%);
-    }
-    to {
-        transform: translateY(70%);
-    }
-}
-
-.show-up {
-    animation: show-up 1s;
-}
-
-@keyframes show-up {
-    from {
-        transform: translateY(-70%);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}
-
-.disappear02 {
-    animation: disappear02 1s;
-}
-
-@keyframes disappear02 {
-    from {
-        transform: translateY(0%);
-    }
-    to {
-        transform: translateY(-70%);
-    }
-}
-
-.show-up02 {
-    animation: show-up02 1s;
-}
-
-@keyframes show-up02 {
-    from {
-        transform: translateY(70%);
-    }
-    to {
-        transform: translateY(0%);
-    }
 }
 
 .wraper {
+    position: relative;
+    z-index: 1;
+    top: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,6 +266,8 @@
 }
 
 .footer {
+    position: relative;
+    top: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -422,10 +327,4 @@ ul.main-menu li a {
 
 .footer .rightF .li02:hover {
     color: red;
-}
-
-.active {
-    position: fixed;
-    top: 0;
-    height: 70px;
 }
