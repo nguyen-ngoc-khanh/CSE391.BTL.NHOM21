@@ -182,6 +182,7 @@
 .header .wrap .search01 .uncag {
     opacity: 1;
     visibility: visible;
+    display: block;
 }
 
 .disappear {
@@ -295,7 +296,7 @@
 }
 
 .wraper .contanier .nav .search {
-    height: 6vh;
+    height: 5vh;
     border: 1px solid rgb(187, 186, 186);
     padding: 0;
     border-radius: 2px;
@@ -314,6 +315,7 @@
 
 .wraper .contanier .nav .search button {
     width: 30%;
+    overflow: hidden;
     border: none;
     outline: none;
     color: #333;
@@ -428,4 +430,10 @@ ul.main-menu li a {
     position: fixed;
     top: 0;
     height: 70px;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }

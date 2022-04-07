@@ -5,25 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/Hanoi.css">
     <title>Du Lịch Việt Nam</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <div class="row">
         <!--Logo tiêu đề-->
-        <div class="header col-12">
+        <div class="header col-12 active">
             <div class="wrap  col-10">
-                <div class="logo col-4">
+                <div class="logo col-3">
                     <img src="images/logo.png" alt="Logo">
                 </div>
-
-                <div class="search col-2">
-                    <div class="uncag col-12">
+                <div class="search01 col-2">
+                    <div class="slide uncag col-12">
                         <a href="#">Uncategorized</a>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <ul class="sub sub2">
+                            <li id="icon01">
+                                <span id="dauTK"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide switch col-12">
+                        <input type="header-search" id="header-search" placeholder="Search..." />
+                        <ul class="sub sub1">
+                            <li id="icon02">
+                                <span id="dauX"><i class="fa-solid fa-x"></i></span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -37,26 +49,96 @@
                             <h2>Hanoi Guide: What to do ? Top Attractions</h2>
                         </a>
                     </div>
-                    <!-- Đoạn văn 1 -->
+                    <div class="table col-12">
+                        <div class="menu col-6">
+                            <div class="menu-inner">
+                                <div class="menu-title">
+                                    <h4>Table of contents</h4>
+                                    <div class="show-hide">
+                                        <div class="slide show-menu">
+                                            <p id="show">Show</p>
+                                        </div>
+                                        <div class="slide hide-menu">
+                                            <p id="hide">Hide</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-list">
+                                    <ul>
+                                        <li>
+                                            <p>Geography</p>
+                                        </li>
+                                        <li>
+                                            <p>About Hanoi</p>
+                                        </li>
+                                        <li>
+                                            <p>What time is best to visit Hanoi ?</p>
+                                        </li>
+                                        <li>
+                                            <p>How to go to Hanoi ?</p>
+                                        </li>
+                                        <li>
+                                            <p>Which places in Hanoi to visit ?</p>
+                                        </li>
+                                        <li>
+                                            <p>What to buy for gifts and souvenirs ?</p>
+                                            <ul class="menu-list-inner">
+                                                <li>
+                                                    <p>Foods as Gifts</p>
+                                                </li>
+                                                <li>
+                                                    <p>Clothes and Jewelry as Gifts</p>
+                                                </li>
+                                                <li>
+                                                    <p>Other ideas</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>What are local experiences in Hanoi you should try ?</p>
+                                        </li>
+                                        <li>
+                                            <p>What to eat in Hanoi ?</p>
+                                            <ul class="menu-list-inner">
+                                                <li>
+                                                    <p>Savory foods</p>
+                                                </li>
+                                                <li>
+                                                    <p>Desserts</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Beverages</p>
+                                        </li>
+                                        <li>
+                                            <p>Where to stay ?</p>
+                                        </li>
+                                        <li>
+                                            <p>City Map</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="p1">
                         <a href="#">
                             <h2>Geography</h2>
                         </a>
                         <p>Located in the north of Viet Nam, Hanoi is a beautiful city that cannot be missed out from the journey along this beautiful country. Yet, how to explore this capital city of Vietnam might challenge you as a first-time tourist here.
-                            Today, we’ll help you with an overall guide about Hanoi.</p>
+                            Today, we'll help you with an overall guide about Hanoi.</p>
                     </div>
-                    <!-- Đoạn văn 2 -->
                     <div class="p1">
                         <a href="#">
                             <h2>About Hanoi</h2>
                         </a>
-                        <p>In case you haven’t known, the little city is recognized as the City for Peace by UNESCO, and the oldest capital city among those in Southeast Asia.</p>
+                        <p>In case you haven't known, the little city is recognized as the City for Peace by UNESCO, and the oldest capital city among those in Southeast Asia.</p>
                         <p>On having evidence of human residence about 20,000 years ago and becoming the capital city of Vietnam in 1010, Hanoi is a city with such a long history and plays a central role in the politics, economy and culture of the country.
                             Throughout the time, this city has expanded in terms of area and population to about over 8 million people living in 12 districts.</p>
                         <p>Because of the centralized services in the city, people from all over the country, especially the northern, have flocked to Hanoi to receive higher education or look for job opportunities. Therefore, you will find traces of cultures
                             from diverse nearby areas in the city.</p>
                     </div>
-                    <!-- Đoạn văn 3 -->
                     <div class="p1">
                         <a href="#">
                             <h2>What time is best to visit Hanoi ?</h2>
@@ -67,9 +149,9 @@
                             March, or even April can be annoyingly humid, while the rainy season will start from August to October. Remember to bring appropriate clothes for your health and some face masks to avoid Covid-19 (of course!) and occasional
                             bad AQI days</p>
                         <p>If you can’t make your decision, avoiding rainy times is the easiest option. Visiting on Tet (Vietnamese Lunar New Year), which might be in February or March, is also not recommended as businesses close and people go back to their
-                            hometown.</p>
+                            hometown.
+                        </p>
                     </div>
-                    <!-- Đoạn văn 4 -->
                     <div class="p1">
                         <a href="#">
                             <h2>How to go to Hanoi ?</h2>
@@ -82,7 +164,6 @@
                         <p>You want to explore the beautiful landscape of the countryside on the trip and have some time to spare? Going to Hanoi by train is for you! The time is much longer, about 38 hours. But it’s worth seeing the beauty of the country
                             from day till night before exploring the capital city, isn’t it? At a cost of $40 to $55, you will have a seat on the train by Vietnam Railway. Online tickets are sold on dsvn.vn.</p>
                     </div>
-                    <!-- Đoạn văn 5 -->
                     <div class="p1 ">
                         <a href="#">
                             <h2>Which places in Hanoi to visit ?</h2>
@@ -91,7 +172,6 @@
                             a must to pay a visit. However, the number will be overwhelming if visitors are short of time. No more worries, we’ve created a list for you to choose from:</p>
                         <p>There’re a lot more museums and places with history; however, these are the most worth sightseeing to know more about the history of Vietnam and Hanoi in particular. For something more fun, scroll down to know what they are !</p>
                     </div>
-                    <!--Đoạn văn 6-->
                     <div class="p1 ">
                         <a href="#">
                             <h2>What to buy for gifts and souvenirs ?</h2>
@@ -101,10 +181,9 @@
                         <p>Additionally, souvenirs can be purchased in tourist-targeted shops, specifically those in Hoan Kiem District. You will find Hanoi-related models, cards, clothes, things like that. They’re meaningful, but always remember to negotiate
                             for a better deal. Learning to bargain is what should be done for every tourist on their first visit to a city, right ?</p>
                     </div>
-                    <!--Đoạn văn 7-->
-                    <div class="p1">
+                    <div class="p1 txt" id="s2">
                         <a href="#">
-                            <h2>Foods as Gifts</h2>
+                            <h2 class="txt-inner">Foods as Gifts</h2>
                         </a>
                         <p>If you want something more than just commercial souvenirs, foods and traditional clothes are best to buy. You can look for Vietnamese snacks in the supermarkets to enjoy on the trip in Hanoi, or Com (Young Rice) is the best. Soft,
                             chewy, full of earthy flavor, it will give you an authentic feeling of an old city with over 1000 years of history. Banh Com, made of this rice, is also worth a try. The best Com and Banh Com are said to be sold on Hang Than
@@ -115,9 +194,9 @@
                             delicious O Mai for many family generations.</p>
                         <p>Are you (or your gift recipients) a chocolate lover? Try Maison Marou Hanoi for delicious chocolate with amazing flavors, including those relating to Vietnamese cuisine like Pho !</p>
                     </div>
-                    <div class="p1">
+                    <div class="p1 txt">
                         <a href="">
-                            <h2>Clothes and Jewelry as Gifts</h2>
+                            <h2 class="txt-inner">Clothes and Jewelry as Gifts</h2>
                         </a>
                         <p>Traditional clothes are a good choice. Ao Dai is more well-known to the world as Vietnamese traditional clothes. Nonetheless, there are now more options as various Viet Phuc (Vietnamese traditional clothes) are recently on the
                             rise. You can find Ao Tac, Ao Vien Linh, Ao Nhat Binh, and many others online or at some shops. If you want to buy on e-commerce platforms, search Việt Phục on Shopee and there’ll be some options with good reviews.</p>
@@ -125,9 +204,9 @@
                         <p>Clothes go with jewelry. Hi’de Maison (116 Pho Duc Chinh St.) is a place to shop handcrafted silverware, from Kieng (traditional Viet necklace), earrings, rings, to haircombs and cutlery. Silver Soul Studio is another place offering
                             high-quality handmade silver jewelry inspired by nature on the 2nd floor of 174 Xa Dan 2 alley.</p>
                     </div>
-                    <div class="p1">
+                    <div class="p1 txt">
                         <a href="#">
-                            <h2>Other ideas</h2>
+                            <h2 class="txt-inner">Other ideas</h2>
                         </a>
                         <p>For some gifts ideas, you can visit Crabit (adorable stationery store), The Craft House (board games and creative items), LiuLo Arts & Craft (creative, artistic heaven),…</p>
                     </div>
@@ -144,17 +223,118 @@
                             Royal City shopping mall. Paintings, sculptures are sometimes displayed here without any ticket, making it a perfect place for many gen Z to check-in. Water Puppet Show at 49 Dinh Tien Hoang St. (Hoan Kiem Dist.) is good as
                             well to immerse in Vietnamese culture.</p>
                         <p>To relax your muscles after long days of going around, some sessions of hair washing or massage is amazing. Dao’s Care in Tay Ho Dist. or Nha Ba Gian in Hoan Kiem Dist. are good places, considering the medicinal herbs and traditional
-                            methods.</p>
+                            methods.
+                        </p>
+                    </div>
+                    <div class="p1 txt">
+                        <a>
+                            <h2>What to eat in Hanoi ?</h2>
+                            <h2 class="txt-inner">Savory foods</h2>
+                        </a>
+                    </div>
+                    <div class="p1 txt">
+                        <p>Going to Hanoi, no wonder that Pho and Banh Mi are must-try. But there are many other foods to enjoy. Here are your savory list to try:</p>
+                        <ul class="list">
+                            <li class="list-inner">
+                                <p>Xoi: sticky rice with various toppings like eggs, pate, stewed pork, sausages, etc.</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Different types of traditional rice noodles like Bun: Bun Bo (beef), Bun Ga (chicken), Bun Cha, Bun Rieu Cua (crab meat), Bun Dau Mam Tom (cold noodle with shrimp paste and other toppings)</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Banh Cuon: soft rice pancakes</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>And even skewers on the streets are our recommendation for you in the journey of Vietnamese cuisine.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p1 txt">
+                        <a href="">
+                            <h2 class="txt-inner">Dessert</h2>
+                        </a>
+                        <p>When it comes to desserts, Trang Tien ice cream on Trang Tien street is where you go straight ahead. Popsicles and ice-cream cones from natural ingredients are what the shop served for years in Hanoi.</p>
+                        <p>You must also put Che in your food list, especially when you’re in the Hoan Kiem district. In summer, you can eat:</p>
+                        <ul class="list">
+                            <li class="list-inner">
+                                <p>Che Dau (black/mung/red/white bean)</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Che 4 Mua, Che Hat Sen (Lotus Seed)</p>
+                            </li>
+                        </ul>
+                        <p>In winter, these 2 followings are best to warm up your stomach:</p>
+                        <ul class="list">
+                            <li class="list-inner">
+                                <p>Xoi Che Ba Cot</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Banh Troi Nuoc</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p1">
+                        <a href="">
+                            <h2>Berverage</h2>
+                        </a>
+                        <p>Ca Phe, Vietnamese coffee, must be on your list. Its flavor has already crossed the border and gained the love of the whole world, You can try the classic black coffee or Bac Xiu, and the local Egg Coffee at many coffee shops.
+                            The coffee culture has flourished in Hanoi in recent years, so you’ll easily find one, especially in the Hoan Kiem district or Tay Ho district.</p>
+                        <p>In addition to coffee, another caffeine beverage you should try is tea. A perfect place for you to enjoy different types of tea with some pastries in a calming atmosphere is The Social Tea Hub on Tay Son Street. Phuc Long teashop
+                            chain is another destination for tea lovers.</p>
+                        <p>If the foods and drinks are a means to join with local life, you must try the beer corner on Ta Hien St. at night. Sitting on a chair apparently for a 6-year-old, you have local beer and side dishes to have some fun with your friends
+                            and people close by. What a way to end the day!</p>
+                    </div>
+                    <div class="p1 map">
+                        <a href="">
+                            <h2>Where to stay ?</h2>
+                        </a>
+                        <div class="googlemap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.98839009514!2d105.81945407552648!3d21.022738704089793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1649352159548!5m2!1svi!2s"
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <a href="">
+                            <h2>City map</h2>
+                        </a>
+                        <div class="image">
+                            <img src="images/hnmap.png" alt="">
+                        </div>
+
                     </div>
 
-                    <div class="other col-10">
-                        <a href="">Other entries</a>
+                    <div class="submit col-n1">
+                        <div class="submit-title">
+                            <h3>Submit a comment</h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                        </div>
+                        <form class="form col-12">
+                            <div class="submit-text">
+                                <div class="submit-comment">
+                                    <textarea placeholder=" Comment *"></textarea>
+                                </div>
+                                <div class="subit-name">
+                                    <input type="text" placeholder=" Name *">
+                                </div>
+                                <div class="subit-email">
+                                    <input type="email" placeholder=" Email *">
+                                </div>
+                                <div class="submit-website">
+                                    <input type="text" placeholder=" Website *">
+                                </div>
+                            </div>
+                            <div class="submit-checkbox">
+                                <input type="checkbox" id="checkbox" name="remember-my-name" value="remember">
+                                <label for="remember-my-name">Save my name, email, and website in this browser for the next time I comment.</label><br>
+                            </div>
+                            <div class="submit-button col-4">
+                                <input type="submit" class="btn" value="Submit">
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="nav col-n ">
                     <div class="search col-12">
                         <input type="text">
-                        <button>SEARCH</button>
+                        <button class="search-button">SEARCH</button>
                     </div>
 
                     <div class="title col-12">
@@ -242,6 +422,7 @@
                 </div>
             </div>
         </div>
+        <script src="js/appHN.js"></script>
 </body>
 
 </html>
