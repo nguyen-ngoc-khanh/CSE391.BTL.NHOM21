@@ -71,6 +71,10 @@
     width: 20%;
 }
 
+.col-n1 {
+    width: 95%;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
@@ -156,6 +160,7 @@
     padding: 5px;
     border: 0;
     width: 70%;
+    outline: 0;
 }
 
 .header .wrap .search01 .switch i {
@@ -249,6 +254,60 @@
     padding: 0px;
 }
 
+.wraper .contanier .content .table {
+    padding-bottom: 50px;
+}
+
+.wraper .contanier .content .table .menu {
+    width: 50%;
+    background-color: aqua;
+    margin-left: 50px;
+}
+
+.wraper .contanier .content .table .menu .menu-inner {
+    margin: 10px;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-title {
+    display: flex;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-title .show-hide {
+    padding-left: 20px;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-title .show-hide p {
+    position: absolute;
+    color: red;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-title .show-hide p::before {
+    content: "[ ";
+    color: #000;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-title .show-hide p::after {
+    content: " ]";
+    color: #000;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-title .show-hide .hide-menu {
+    display: none;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-list {
+    display: none;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-list li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.wraper .contanier .content .table .menu .menu-inner .menu-list .menu-list-inner {
+    padding-left: 10px;
+}
+
 .wraper .contanier .content .p1 {
     margin: 10px;
     padding: 0px 12px;
@@ -256,6 +315,23 @@
     line-height: 1;
     font-size: 20px;
     width: 90%;
+}
+
+.wraper .contanier .content .p1.txt {
+    margin-bottom: 0;
+}
+
+.wraper .contanier .content .p1.txt .list {
+    padding-left: 30px;
+}
+
+.wraper .contanier .content .p1.txt h2 {
+    padding: 2px;
+}
+
+.wraper .contanier .content .p1.txt h2.txt-inner {
+    font-size: 21px;
+    padding-left: 5px;
 }
 
 .wraper .contanier .content .p1 h2 {
@@ -280,7 +356,9 @@
 .wraper .contanier .content .p1 p {
     font-size: 15px;
     color: rgb(88, 88, 88);
+    line-height: normal;
     padding: 10px 5px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .wraper .contanier .content .p1 .image img {
@@ -349,19 +427,90 @@
     color: aquamarine;
 }
 
-.wraper .contanier .content .other {
-    margin: 0 10px;
-    padding: 10px 12px;
+.wraper .contanier .content .submit {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: burlywood;
+    margin-bottom: 20px;
 }
 
-.wraper .contanier .content .other a {
+.wraper .contanier .content .submit .submit-title p {
+    color: #666;
+}
+
+.wraper .contanier .content .submit form {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.wraper .contanier .content .submit .form .submit-text textarea::placeholder {
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.wraper .contanier .content .submit .form .submit-text input::placeholder {
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.wraper .contanier .content .submit form .submit-text {
+    padding-bottom: 15px;
+}
+
+.wraper .contanier .content .submit form .submit-text textarea {
+    outline: 0;
+    border: 0;
+    width: 85%;
+    height: 10vh;
+}
+
+.wraper .contanier .content .submit form .submit-text input {
+    outline: 0;
+    border: 0;
+    height: 35px;
+    width: 60%;
+}
+
+.wraper .contanier .content .submit form .submit-text div {
+    padding: 5px;
+}
+
+.wraper .contanier .content .submit form .submit-checkbox {
+    padding-bottom: 10px;
+}
+
+.wraper .contanier .content .submit form .submit-button {
+    float: right;
+}
+
+.btn {
+    background: transparent;
+    width: 200px;
+    padding: 15px;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border: 2px solid black;
     text-decoration: none;
-    color: rgb(46, 163, 242);
 }
 
-.wraper .contanier .content .other a::before {
-    content: "<<";
-    color: rgb(46, 163, 242);
+.btn:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .submit-button {
+        margin-right: 20vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .submit-button {
+        margin-right: 0vh;
+    }
 }
 
 .footer {
@@ -430,10 +579,4 @@ ul.main-menu li a {
     position: fixed;
     top: 0;
     height: 70px;
-}
-
-.visible {
-    display: block;
-    opacity: 1;
-    visibility: visible;
 }
