@@ -567,6 +567,21 @@ ul.main-menu li a {
     padding: 5px;
 }
 
+.footer .rightF .rightF-input input {
+    background: transparent;
+    padding: 2px 15px 2px 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.footer .rightF .rightF-input input:hover {
+    color: green;
+    border: 2px solid green;
+}
+
 .footer .rightF .li01:hover {
     color: blue;
 }
