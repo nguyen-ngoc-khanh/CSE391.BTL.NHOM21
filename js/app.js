@@ -1,21 +1,17 @@
-var head = document.querySelector('.header')
-var height = head.offsetHeight
-console.log(height)
+/*jshint esversion: 6 */
+
+var head = document.querySelector('.header');
+var height = head.offsetHeight;
+console.log(height);
 
 window.addEventListener('scroll', (e) => {
     if (window.scrollY > height) {
-        head.classList.add("active")
+        head.classList.add("active");
     } else {
-        head.classList.remove("active")
+        head.classList.remove("active");
     }
-})
-
-
-$(document).ready(function() {
-    $('#dauTK').click(function(e) {
-        console.log("check");
-    });
 });
+
 $(document).ready(function() {
     $('#icon01').click(function() {
         var lat1 = $('.uncag').next();
@@ -23,7 +19,7 @@ $(document).ready(function() {
         $('.uncag').fadeToggle();
         $('.uncag').one('animationend', function(event) {
             $('.disappear').removeClass('disappear');
-        })
+        });
         lat1.addClass('uncag').addClass('show-up');
         lat1.one('animationend', function(event) {
             $('.show-up').removeClass('show-up');
@@ -38,11 +34,28 @@ $(document).ready(function() {
         $('.switch').fadeToggle();
         $('.switch').one('animationend', function(event) {
             $('.disappear02').removeClass('disappear02');
-        })
+        });
         lat2.addClass('switch').addClass('show-up02');
         lat2.one('animationend', function(event) {
             $('.show-up02').removeClass('show-up02');
         });
         $('.switch').css("display", "block");
+    });
+});
+$(document).ready(function() {
+    $('#show').click(function() {
+        var chuyen1 = $('.show-menu').next();
+        $('.menu-list').css("display", "block");
+        $('.show-menu').fadeToggle(0);
+        chuyen1.css("display", "block");
+    });
+});
+
+$(document).ready(function() {
+    $('#hide').click(function() {
+        var chuyen2 = $('.hide-menu').prev();
+        $('.menu-list').css("display", "none");
+        $('.hide-menu').fadeToggle(0);
+        chuyen2.css("display", "block");
     });
 });

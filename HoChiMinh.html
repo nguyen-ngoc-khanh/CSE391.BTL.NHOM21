@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/HCM.css">
+    <title>Du Lịch Sài Gòn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <!--Logo tiêu đề-->
+        <div class="header col-12 active">
+            <div class="wrap  col-10">
+                <div class="logo col-3">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="search01 col-2">
+                    <div class="slide uncag col-12">
+                        <a href="#">Uncategorized</a>
+                        <ul class="sub sub2">
+                            <li id="icon01">
+                                <span id="dauTK"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide switch col-12">
+                        <input type="header-search" id="header-search" placeholder="Search..." />
+                        <ul class="sub sub1">
+                            <li id="icon02">
+                                <span id="dauX"><i class="fa-solid fa-x"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wraper col-12">
+            <div class="contanier col-10" style="padding: 0;">
+                <div class="content col-9">
+                    <div class="p1">
+                        <a>
+                            <h2>Ho Chi Minh City Guide: What to do ? Top Attractions & Restaurants</h2>
+                        </a>
+                    </div>
+                    <div class="table col-12">
+                        <div class="menu col-6">
+                            <div class="menu-inner">
+                                <div class="menu-title">
+                                    <h4>Table of contents</h4>
+                                    <div class="show-hide">
+                                        <div class="slide show-menu">
+                                            <p id="show">Show</p>
+                                        </div>
+                                        <div class="slide hide-menu">
+                                            <p id="hide">Hide</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-list">
+                                    <ul>
+                                        <li>
+                                            <p>Geography</p>
+                                        </li>
+
+                                        <li>
+                                            <p>Saigon’s Weather – When to go?</p>
+                                        </li>
+
+                                        <li>
+                                            <p>Traveling to Ho Chi Minh City</p>
+                                            <ul class="menu-list-inner">
+                                                <li>
+                                                    <p>Airplane (for international or domestic guests)</p>
+                                                </li>
+                                                <li>
+                                                    <p>Transportation to/from Tan Son Nhat Airpot</p>
+                                                </li>
+                                                <li>
+                                                    <p>Train</p>
+                                                </li>
+                                                <li>
+                                                    <p>Shuttle Bus</p>
+                                                </li>
+                                                <li>
+                                                    <p>Transportation within Ho Chi Minh City</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <p>Top attractions</p>
+                                            <ul class="menu-list-inner">
+                                                <li>
+                                                    <p>1. Saigon Notre-Dame Basilica</p>
+                                                </li>
+                                                <li>
+                                                    <p>2. Saigon Central Post Office</p>
+                                                </li>
+                                                <li>
+                                                    <p>3. Crescent Lake – Starlight Bridge</p>
+                                                </li>
+                                                <li>
+                                                    <p>4. Ben Thanh market</p>
+                                                </li>
+                                                <li>
+                                                    <p>5. The Reunification Palace</p>
+                                                </li>
+                                                <li>
+                                                    <p>6. War Remnants Museum</p>
+                                                </li>
+                                                <li>
+                                                    <p>7. Nguyen Hue Walking Street</p>
+                                                </li>
+                                                <li>
+                                                    <p>8. Cu Chi Tunnels</p>
+                                                </li>
+                                                <li>
+                                                    <p>9. Golden Dragon Water Puppet Theater</p>
+                                                </li>
+                                                <li>
+                                                    <p>10. Bach Dang Wharf (District 1, Ho Chi Minh City)</p>
+                                                </li>
+                                                <li>
+                                                    <p>11. Bui Vien Walking Street</p>
+                                                </li>
+                                        </li>
+
+                                        <li>
+                                            <p>Best dishes & restaurants in Ho Chi Minh City</p>
+                                            <ul class="menu-list-inner">
+                                                <li>
+                                                    <p>1. A famous food street in District 1, Saigon – Co Giang</p>
+                                                </li>
+                                                <li>
+                                                    <p>2. Snacking street along Lake Con Rua</p>
+                                                </li>
+                                                <li>
+                                                    <p>3. Phan Xich Long food street</p>
+                                                </li>
+                                                <li>
+                                                    <p>4. Alley 200 Xom Chieu</p>
+                                                </li>
+                                                <li>
+                                                    <p>5. Vinh Khanh snail street</p>
+                                                </li>                                             
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <p>Where to stay ?</p>
+                                        </li>
+                                        <li>
+                                            <p>Shopping Experience For Tourists</p>
+                                            <ul class="menu-list-inner">
+                                                <li>
+                                                    <p>Saigon’s best markets</p>
+                                                </li>
+                                            </ul>    
+                                        </li>
+
+                                        <li>
+                                            <p>Saigon’s insider tips</p>
+                                        </li>
+
+                                        <li>
+                                            <p>City Map</p>                                   
+                                        </li>    
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Geography</h2>
+                        </a>
+                        <p>Ho Chi Minh City is nearly 1,730km by road from Vietnam’s capital, Hanoi. Located at the international crossroads between the maritime routes from North to South, from East to West, Ho Chi Minh city is the focal point of Southeast Asia.
+
+                            The North borders Binh Duong province, the Northwest borders Tay Ninh province, the East and Northeast borders Dong Nai province, the Southeast borders Ba Ria – Vung Tau province, the West and Southwest border Long An.
+                            
+                            Ho Chi Minh City consists of 19 districts and 5 districts from Hoc Mon field to Can Gio district, from Thu Duc orchard to remote Binh Chanh district, it’s all part of Ho Chi Minh city.
+                            
+                            As of July 2021, according to the World Population Review website, the population of Ho Chi Minh City reached 8,837,544 people.
+                        </p>    
+                    </div>
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Saigon’s Weather – When to go?
+                            </h2>
+                        </a>
+                        <p>Ho Chi Minh City is located in the South, which is a tropical monsoon sub-equatorial region, so the temperature is consistently high throughout the year. The two seasons, rainy and dry, clearly have a profound impact on the city landscape.</p>
+                        <p>The rainy season lasts from April to September
+                            The dry season covers the rest of the year</p>
+                        <p>Therefore, if you want to travel to Saigon, you should choose the sunny season. However, in the hot season, the temperature in Saigon is quite high with an average of about 28 degrees Celsius and the highest in April (30.5 degrees Celsius), the lowest, in December at about 26 degrees Celsius.
+
+                            During the day, Saigon is bustling and hasty because everyone seems to be racing with the pace of life, Saigon at night is splendid and luxurious like a queen. Coming to Ho Chi Minh City, we cannot ignore the following places.</p>                        
+                    </div>
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Traveling to Ho Chi Minh City</h2>
+                        </a>
+                        <p>As Vietnam’s largest city, Saigon possesses an extremely modern and developed transport network. There are many ways for visitors to come to this historic city.</p>    
+                        <a href="#">
+                            <h2>Airplane (for international or domestic guests)</h2>
+                        </a>
+                        <p>Tan Son Nhat Airport is 8km from the city center, very convenient for moving into the city. Currently, at this airport, dozens of planes take off or land daily from 3 domestic airlines: Vietnam Airlines, Vietjet, Bamboo… It’s also a busy international airport, with direct flights coming from the USA, Europe, Middle-East, and Asia.
+
+                            For cheap flight tickets, you can refer to two airlines Vietjet and Jetstar with many preferential flight tickets ranging from 199,000VND to 900,000 VND for domestic flights.
+                            
+                            There will be many flight schedules during the day so you can choose to move whenever you need.
+                        </p>    
+                        <a href="#">
+                            <h2>Transportation to/from Tan Son Nhat Airpot</h2>
+                        </a>
+                        <p>After landing at the airport, you can reach the city center by taxi, private hire, bus or shuttle:
+
+                           - For taxis, prices range from 200 000VND – 300 000VND from the airport to the inner city.
+                           - Uber’s equivalent in Vietnam is Grab, prices range from 200 000VND – 300 000VND from the airport to the inner city.
+                           - Bus number 152, bus 159, Shuttle Bus 49 with travel time from 30 to 65 minutes/time, ticket prices range from 6,000VND to 40,000 VND/pax/way.
+                        </p>
+                        <a href="#">
+                            <h2>Train</h2>
+                        </a> 
+                        <p>If you have a lot of time and want to go enjoy the scenery, then do not hesitate to choose the train. Gently moving on the road, watching each rustic idyllic countryside slowly pass through the eyes, and having private space with friends to chat, will definitely make your Saigon tour more unforgettable.
+
+                            If starting from Hanoi station, you should use the train connecting the North-South named Thong Nhat. The final destination is Saigon station in the District 3 area, quite close to the central area of District 1. Train ticket prices currently depend a lot on the class of seats, compartments, and the type of trains you choose. Normally, the train route from Hanoi to Saigon varies from 578,000VND to 2,200,000 VND/pax/ticket with a total travel time of 30 hours.
+                        </p>
+                        <a href="#">
+                            <h2>Shuttle Bus</h2>
+                        </a>
+                        <p>If you are already in Vietnam, you can choose to travel by Shuttle Bus, this is a cheap and economical means of transportation.
+
+                            The car companies you can choose from are Phuong Trang, Thanh Buoi, Tuan Tu…
+                            You can go directly to the bus companies’ website to book tickets online.
+                            
+                            Ticket prices range from 200 000VND – 350 000VND, the price will be 100 000VND -200 000VND during high seasons.
+                        </p>
+                        <a href="#">
+                            <h2>Transportation within Ho Chi Minh City</h2>
+                        </a>
+                        <p>If you don’t book a package tour, some of the popular means of transportation to tourist areas in Saigon are taxis, motorbike rentals, buses, cyclos, or Saigon water buses. Taking a taxi / Grab is suitable for groups of friends or families.
+
+                            If you want to explore the streets, renting a motorbike or cyclo is the most convenient.
+                            
+                            Motorbike rental price ranges from 80,000 – 200,000 VND/day.
+                            
+                            Cyclo prices are calculated by the hour, with a cost of about 50,000 – 80,000 VND for 2 people and only circulate in the central area.
+                        </p>           
+                    </div>
+                    <div class="p1">
+                        <a href="#">
+                            <h2>Top attractions</h2>
+                        </a>
+                            <h2>1. Saigon Notre-Dame Basilica</h2>
+                            <img src="images/1.jpg" alt="Logo">
+                            <p>Notre Dame Cathedral has long become a symbol of this city. In the middle of a peaceful and modern place, Notre Dame Cathedral has a special nostalgic and peaceful feature.
+
+                                This work is designed in the Roman and Gothic architectural styles of Europe, so it is boldly ancient and is considered one of the 19 most beautiful basilicas in the world.
+                            </p>
+
+                            <h2>2. Saigon Central Post Office</h2>
+                            <img src="images/2.jpg" alt="Logo">
+                            <p>Located at 2, Paris Commune Square, District 1. This is a structure designed by architect Villedieu and erected by the Frenchs. The architecture is European style combined with Asian decoration.</p>
+
+                            <h2>3. Crescent Lake – Starlight Bridge</h2>
+                            <p>This location is located in District 7, Ho Chi Minh City. The initiative serves as a weekend or holiday destination for young people. Walking through Crescent Lake and Starlight Bridge, unlike other parks, gives you the sensation of being in a sophisticated and elegant city overseas.</p>
+
+                            <h2>4. Ben Thanh market</h2>
+                            <p>It is the oldest market in Saigon, both ancient and modern. Ben Thanh Market is a destination not to be missed if traveling to Ho Chi Minh. Operating from 7 am to 7 pm. This market is quite famous for selling all kinds of goods for domestic and foreign tourists. Also one of the symbols of Saigon.</p>
+                            <img src="images/3.jpg" alt="Logo">
+
+                            <h2>5. The Reunification Palace</h2>
+                            <p>The Reunification Palace is situated on a 15-hectare plot of land in the city’s centre. This is a one-of-a-kind architectural work that has been linked to numerous significant historical events in the country.  </p>                 
+
+                            <h2>6. War Remnants Museum</h2>
+                            <p>This is the most accurate depiction of the brutal conflict that the Vietnamese people have lived through. In the Con Dao jail, artifacts like airplanes, guns, tanks, guillotines, and two compartments “tiger cages” were constructed to scale.
+
+                                There is also a gallery dedicated to the conflict on the southern frontier, the war to protect the northern border, the problem of the Spratly archipelago, and the hostile forces’ plot….
+                            </p>    
+
+                            <h2>7. Nguyen Hue Walking Street</h2>
+                            <p>For a long time, Nguyen Hue Street has been the central arterial road of Saigon. Put into use since 2015, Nguyen Hue pedestrian street is the most beautiful and modern square in Vietnam.
+
+                                When the sun started to fade, the street became crowded again, becoming a gathering place for fun. Especially when it comes to the Lunar New Year, the flower exhibition held here attracts a lot of people’s attention.
+                            </p>    
+
+                            <h2>8. Cu Chi Tunnels</h2>
+                            <p>Cu Chi Tunnels is a resistance base located deep in the ground from the time of the Indochina war. This relic has a system of tunnels between meeting rooms, infirmaries, residences, warehouses… with a length of up to 200km. When you come here to visit, you should bring sports shoes to make the movement more convenient.</p>
+
+                            <h2>9. Golden Dragon Water Puppet Theater</h2>
+                            <p>Water puppetry is an ancient art form that originated in the North (Red River Delta) and has since expanded and spread around the world. This art form is frequently performed on religious and exceptional events such as holidays, village festivals, New Year’s Day, and so on…</p>
+
+                            <h2>10. Bach Dang Wharf (District 1, Ho Chi Minh City)</h2>
+                            <p>Bach Dang Wharf owns a beautiful position at address 2, Ton Duc Thang Street, Ben Nghe Ward, District 1, Ho Chi Minh City. As one of the famous tourist attractions in Saigon related to important historical milestones of Vietnam, Bach Dang Wharf has attracted the attention of many foreign tourists.
+
+                                With the charming beauty next to the Saigon River, from the late 1950s to the 1960s, Bach Dang Wharf was the ideal dating place for many lovers. At night, this place is shimmering and beautiful with a system of luxurious restaurant trains.
+                            </p>    
+
+                            <h2>11. Bui Vien Walking Street</h2>
+                            <p>Bui Vien is a place where you will have endless fun. Every restaurant, pub, bar is always crowded with customers from the evening until the next morning. This is a familiar gathering place for young people in the city and visitors every night.
+
+                                In addition, there are many other places that are equally attractive, surely the following articles will describe in more detail for you each famous place in Saigon.
+                            </p>                                                                                                                                                           
+                    </div>
+                    <div class="p1 txt">
+                        <a>
+                            <h2>Best dishes & restaurants in Ho Chi Minh City</h2>
+                        </a>
+                    </div>
+                    <div class="p1 txt">
+                        <p>You should try some extremely attractive dishes in Saigon:</p>
+                        <ul class="list">
+                            <li class="list-inner">
+                                <p>Broken rice</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Hu Tieu</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Mixed rice paper</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Banh Canh</p>
+                            </li>
+                            <li class="list-inner">
+                                <p>Bun Dau Mam Tom</p>                              
+                            </li>
+                            <li class="list-inner">
+                                <p>Beef Hot Pot</p>
+                            </li>    
+                            <li class="list-inner">
+                                <p>Snails (if you dare trying this dish)</p>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div class="p1 txt">
+                        <p>To be able to experience all the cuisines without having to spend too much time and move many places, you can refer to some of the following famous food streets:</p>
+                    </div>
+                    <div class="p1 txt">
+                        <a>
+                            <h2>1. A famous food street in District 1, Saigon – Co Giang</h2>
+                            <p>Here, there are many unique, attractive, and affordable dishes such as Dalat vermicelli noodles, Ms. Tuyen’s grilled meat vermicelli, Ms. Giang’s tea, etc. The location is in the center, so it is very convenient to move here to enjoy.</p>
+
+                            <h2>2. Snacking street along Lake Con Rua   </h2>
+                            <p>Ho Con Rua food street for Saigon people seems to have become an unforgettable memory. Coming to this neighborhood, you will enjoy mixed rice paper, rolled rice paper, fried quail eggs with tamarind, … Just spend 10,000 – 15,000 VND</p>
+
+                            <h2>3. Phan Xich Long food street</h2>
+                            <p>At Phan Xich Long Street, there are also many other dishes, converging the culinary quintessence of the North – Central – South.</p>
+
+                            <h2>4. Alley 200 Xom Chieu</h2>
+                            <p>This place is very crowded and also has many delicious and attractive restaurants with extremely affordable prices.</p>
+
+                            <h2>5. Vinh Khanh snail street</h2>
+                            <p>Almost all kinds of snails are processed into many different dishes such as boiled snails, fried snails with tamarind, snails with cheese sauce, grilled snails, steamed snails with ginger discharge.</p>
+                        </a>
+                    </div>
+                    <div class="p1">
+                        <a>
+                            <h2>Where to stay ?Shopping Experience For Tourists</h2>   
+                            <p>When you travel in Saigon, being quoted high prices is a standard procedure, so you should always bargain with the seller and suggest 50 000 VND to 100 000VND off. And if you find the price too expensive and unreasonable, then just pretend to leave and the sellers will immediately give you a discount.
+                                You can browse through the following products: Shopping for handicrafts, paintings, silk clothes, silk scarves… and many more handmade items.
+                            </p>                        
+                        </a>
+                    </div>
+                    <div class="p1">
+                        <a>
+                            <h2>Saigon’s best markets</h2>
+                            
+                            <p>1.Ben Thanh Market Quach Thi Trang Square, District 1</p>  <a href="https://www.google.com/maps/place/March%C3%A9+B%E1%BA%BFn+Th%C3%A0nh/@10.7721148,106.6960897,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f3f3129e64d:0x8d6b2d79522c7f30!8m2!3d10.7721095!4d106.6982784?shorturl=1" target="_blank">See on google map</a>
+                            
+                            <p>2.Binh Tay Market 57A Thap Muoi, District 6</p> <a href="https://www.google.com/maps/place/Binh+Tay+Market/@10.749675,106.6487952,17z/data=!3m1!4b1!4m5!3m4!1s0x31752e8ab9bb054d:0x36072ab090100a11!8m2!3d10.7496697!4d106.6509839?shorturl=1" target="_blank">See on google map</a> 
+
+                            <p>3.Saigon Square Saigon Square 1, 77-89 Nam Ky Khoi Nghia, District 1 </p> <a href="https://www.google.com/maps/place/S%C3%A0i+G%C3%B2n+Square/@10.7727438,106.6980254,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f40ab668353:0x41570b5c5e52852!8m2!3d10.7727385!4d106.7002141?shorturl=1" target="_blank">See on google map</a>
+                        </a>
+                    </div>
+                    <div class="p1 txt">
+                        <h2>Saigon’s insider tips</h2>
+                        <ul class="list">
+                            <li class="list-inner">
+                                <p>Book flights early: Usually, you can book 1 month in advance or 15 days before the flight, prices will be cheaper.</p>
+                            </li>    
+                            <li class="list-inner">
+                                <p>When coming to Vietnam, you should download Grab and Gojek apps to book a car or motorbike with chauffeur to go anywhere and save money.</p>                                               
+                            </li>
+                            <li class="list-inner">
+                                <p>Avoid going to the street during rush hours: from 8am-9am and 17h-18h30 if you want to avoid traffic jams.
+                                </p>               
+                            </li>        
+                            <li class="list-inner">
+                                <p>Bring credit cards, cash, identification papers.
+                                </p>               
+                            </li>    
+                            <li class="list-inner">
+                                <p>Shoppers must bargain, all the time (except in supermarkets).
+                                </p>               
+                            </li>    
+                            <li class="list-inner">
+                                <p>Be careful with your wallet, identity papers, money and valuable items.
+                                </p>                                                            
+                            </li>    
+                            <li class="list-inner">
+                                <p>Do not use the phone while walking in the inner city of Saigon to avoid theft.
+                                </p>               
+                            </li>
+                            <p>Above are our tips for your journey in Ho Chi Minh City (Saigon) Vietnam. In addition to the ancient architecture, unique street food, busy shopping markets, Saigon people are also very friendly. Hopefully, this article will help readers have a complete experience in their journey.
+                            </p>   
+                        </ul>
+                    </div>
+                    <div class="p1 map">
+                        <a href="">
+                            <h2>Where to stay ?</h2>
+                        </a>
+                        <div class="googlemap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10926.778246466982!2d106.62882416962532!3d10.78133768724499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2str!4v1649519518048!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                                
+                        </div>
+                        
+                        <a href="">
+                            <h2>City map</h2>
+                        </a>
+                        <div class="image">
+                            <img src="images/hcmcitymap.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="submit col-n1">
+                        <div class="submit-title">
+                            <h3>Submit a comment</h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                        </div>
+                        <form class="form col-12">
+                            <div class="submit-text">
+                                <div class="submit-comment">
+                                    <textarea placeholder=" Comment *"></textarea>
+                                </div>
+                                <div class="subit-name">
+                                    <input type="text" placeholder=" Name *">
+                                </div>
+                                <div class="subit-email">
+                                    <input type="email" placeholder=" Email *">
+                                </div>
+                                <div class="submit-website">
+                                    <input type="text" placeholder=" Website *">
+                                </div>
+                            </div>
+                            <div class="submit-checkbox">
+                                <input type="checkbox" id="checkbox" name="remember-my-name" value="remember">
+                                <label for="remember-my-name">Save my name, email, and website in this browser for the next time I comment.</label><br>
+                            </div>
+                            <div class="submit-button col-4">
+                                <input type="submit" class="btn" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav col-n ">
+                    <div class="search col-12">
+                        <input type="text">
+                        <button class="search-button">SEARCH</button>
+                    </div>
+
+                    <div class="title col-12">
+                        <h2>Recent post</h2>
+                    </div>
+                    <ul class="col-12">
+                        <li>
+                            <a href="# ">
+                                Mui Ne Guide: What to do ? Top Attractions
+                        </a>
+                        </li>
+                        <li>
+                            <a href="Hanoi.html">
+                                <p>Hanoi Guide: What to do ? Top Attractions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <p>Ho Chi Minh City Guide: What to do ? Top Attractions & Restaurants</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="MaiChauVN.html">
+                                <p>Mai Chau Vietnam | Travel Guide</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <p>Ho Chi Minh City’s Map and Must-see attractions</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer col-12">
+            <div class="topF col-10">
+                <div class="leftF col-9">
+                    <div class="dong1">
+                        <p>Bài tập lớn nhóm 21</p>
+                    </div>
+                    <div class="nav">
+                        <ul class="main-menu">
+                            <li class="li_01">
+                                <a href="homepage.html"> Trang chủ</a>
+
+                            </li>
+
+                            <li>
+                                <p>|</p>
+                            </li>
+
+                            <li class="li_02">
+                                <a href="Hanoi.html">Trang của Khánh</a>
+
+                            </li>
+
+                            <li>
+                                <p>|</p>
+                            </li>
+
+                            <li class="li_03">
+                                <a href="MaiChauVN.html">Trang của Duy</a>
+
+                            </li>
+
+                            <li>
+                                <p>|</p>
+                            </li>
+
+                            <li class="li_04">
+                                <a href="#">Trang của Hoàng</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightF col-3">
+                    <li class="li01">
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="li02">
+                        <i class="fa-brands fa-youtube"></i>
+                    </li>
+                    <div class="rightF-input">
+                        <a href="dangnhap.html">
+                            <input type="submit" value="Đăng nhập">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+                    
