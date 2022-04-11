@@ -59,3 +59,35 @@ $(document).ready(function() {
         chuyen2.css("display", "block");
     });
 });
+
+
+let btn = document.querySelector('.btn');
+btn.addEventListener('click', function() {
+    let cmt = document.querySelector('.cmt').value;
+    let nam = document.querySelector('.nam').value;
+    let mail = document.querySelector('.email').value;
+    let web= document.querySelector('.website').value;
+   
+    let info = {
+        com: cmt,
+        na: nam,
+        mail: mail,
+        web: web
+    };
+
+    let localInf = JSON.parse( localStorage.getItem('user'))
+    console.log(localInf)
+    if(localInf === null){
+
+        let listInfo = []
+        listInfo.push(info)
+        localStorage.setItem('user', JSON.stringify(listInfo));
+        console.log('n')
+        
+    }else{
+        localInf.push(info)
+        localStorage.setItem('user', JSON.stringify(localInf));
+        console.log('y')
+    }
+
+});
