@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-n {
+    width: 20%;
+}
+
+.col-n1 {
+    width: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.header {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: 1s;
+}
+
+.header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header .wrap .logo {
+    margin: 15px;
+    height: 40px;
+}
+
+.wraper {
+    min-height: 77.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: url('../images/dangnhap.jpg');
+    background-size: cover;
+}
+
+#form-login {
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+}
+
+.form-header {
+    font-size: 25px;
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-inner {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    margin: 15px 0 20px 0;
+    color: #f5f5f5;
+    display: flex;
+}
+
+#eye {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.form-inner i {
+    color: #fff;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.form-inner input {
+    color: #f5f5f5;
+    background: transparent;
+    width: 85%;
+    border: 0;
+    outline: 0;
+}
+
+.form-inner input::placeholder {
+    color: #f5f5f5;
+}
+
+.form-submit {
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    color: #fff;
+    width: 100%;
+    padding: 6px 10px;
+    margin-top: 30px;
+    transition: 0.25s ease-in-out;
+}
+
+.form-submit:hover {
+    border: 1px solid aqua
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(129, 233, 233);
+    border-top: 1px solid rgb(182, 182, 182);
+}
+
+.footer .leftF {
+    padding: 5px 10px;
+    line-height: 1;
+    color: #666;
+    font-size: 18px;
+}
+
+.footer .leftF .dong1 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+ul.main-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+ul.main-menu li {
+    margin-right: 20px;
+}
+
+ul.main-menu li a:hover {
+    color: red;
+}
+
+ul.main-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.footer .rightF {
+    padding: 5px 10px;
+    line-height: 1;
+    color: #666;
+    font-size: 25px;
+    display: flex;
+    list-style-type: none;
+}
+
+.footer .rightF i {
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.footer .rightF .li01:hover {
+    color: blue;
+}
+
+.footer .rightF .li02:hover {
+    color: red;
+}
