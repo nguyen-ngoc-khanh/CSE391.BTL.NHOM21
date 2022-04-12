@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quanly.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Trang quản trị</title>
+</head>
+
+<body onload="onLoad()">
+    <div class="header col-12">
+        <div class="wrap col-10">
+            <div class="logo col-3">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="wraper col-12">
+        <table class="user">
+            <tr>
+                <th><i class="fa-solid fa-indent"></i>STT</th>
+                <th><i class="fa-solid fa-comment"></i>CMT</th>
+                <th><i class="fa-solid fa-user"></i>Name</th>
+                <th><i class="fa-solid fa-envelope"></i>Mail</th>
+                <th><i class="fa-solid fa-browser"></i>Website</th>
+            </tr>
+
+        </table>
+
+        <div class="change-and-erase col-12">
+            <div class="change col-7">
+                <div class="change-inner col-12">
+                    <p>Sửa thông tin</p>
+                    <div class="form col-12" name="contact">
+                        <div class="submit-text">
+                            <div class="submit-comment">
+                                <textarea placeholder=" Comment *" class="cmt"></textarea>
+                            </div>
+                            <div class="subit-name">
+                                <input type="text" placeholder=" Name *" class="nam">
+                            </div>
+                            <div class="subit-email">
+                                <input type="email" placeholder=" Email *" class="email">
+                            </div>
+                            <div class="submit-website">
+                                <input type="text" placeholder=" Website *" class="website">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-button col-4">
+                        <button class="btn">sub</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="erase col-5">
+                <div class="erase-inner">
+                    <p>Xóa thông tin (theo tên)</p>
+                    <div class="format col-12">
+                        <input type="text" class="nameUser">
+                        <div class="remove">
+                            <button class="btn-remove">remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login col-12">
+            <table class="account-table col-5">
+                <thead>
+                    <tr>
+                        <th>TK</th>
+                        <th>MK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>quantri</td>
+                        <td>khanh</td>
+                    </tr>
+                    <tr>
+                        <td>quantri</td>
+                        <td>duy</td>
+                    </tr>
+                    <tr>
+                        <td>quantri</td>
+                        <td>hoang</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer col-12 ">
+        <div class="topF col-10 ">
+            <div class="leftF col-9 ">
+                <div class="dong1 ">
+                    <p>Bài tập lớn nhóm 21</p>
+                </div>
+                <div class="nav ">
+                    <ul class="main-menu ">
+                        <li class="li_01 ">
+                            <a href="homepage.html "> Trang chủ</a>
+
+                        </li>
+
+                        <li>
+                            <p>|</p>
+                        </li>
+
+                        <li class="li_02 ">
+                            <a href="Hanoi.html">Trang của Khánh</a>
+
+                        </li>
+
+                        <li>
+                            <p>|</p>
+                        </li>
+
+                        <li class="li_03 ">
+                            <a href="MuiNe.html">Trang của Duy</a>
+
+                        </li>
+
+                        <li>
+                            <p>|</p>
+                        </li>
+
+                        <li class="li_04 ">
+                            <a href="HoChiMinh.html">Trang của Hoàng</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightF col-3 ">
+                <li class="li01 ">
+                    <i class="fa-brands fa-facebook "></i>
+                </li>
+                <li class="li02 ">
+                    <i class="fa-brands fa-youtube "></i>
+                </li>
+            </div>
+        </div>
+    </div>
+    <script src="js/quanly.js"></script>
+</body>
+
+</html>

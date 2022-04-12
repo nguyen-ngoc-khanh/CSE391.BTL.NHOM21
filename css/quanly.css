@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-n {
+    width: 20%;
+}
+
+.col-n1 {
+    width: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.header {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: 1s;
+}
+
+.header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header .wrap .logo {
+    margin: 15px;
+    height: 40px;
+}
+
+.change-and-erase {
+    display: flex;
+}
+
+.wraper {
+    min-height: 77.75vh;
+    background: url('../images/dangnhap.jpg');
+    background-size: cover;
+}
+
+.change-and-erase .change {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: burlywood;
+    margin-bottom: 20px;
+}
+
+.change-and-erase .change .change-inner .form .submit-text {
+    line-height: 25px;
+}
+
+.change-and-erase .change .change-inner .form .submit-text textarea {
+    outline: 0;
+    border: 0;
+    width: 85%;
+    height: 10vh;
+}
+
+.change-and-erase .change .change-inner .form .submit-text input {
+    outline: 0;
+    border: 0;
+    width: 50%;
+    height: 5vh;
+}
+
+.change-and-erase .change .change-inner .form .submit-text textarea::placeholder {
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.change-and-erase .change .change-inner .form .submit-text input::placeholder {
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.change-and-erase .change .change-inner .form .submit-text div {
+    padding-top: 5px;
+}
+
+.change-and-erase .change .change-inner .submit-button {
+    float: right;
+}
+
+.change-and-erase .change .change-inner .submit-button button {
+    padding: 2px 15px 2px 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.change-and-erase .change .change-inner .submit-button button:hover {
+    background-color: brown;
+}
+
+.change-and-erase .erase {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+
+.change-and-erase .erase .erase-inner {
+    padding: 5px;
+}
+
+.change-and-erase .erase .erase-inner .format {
+    display: flex;
+    margin-top: 10px;
+}
+
+.change-and-erase .erase .erase-inner .format input {
+    outline: 0;
+    border: 0;
+    width: 50%;
+    height: 4vh;
+}
+
+.change-and-erase .erase .erase-inner .format .remove {
+    margin-left: 10px;
+}
+
+.change-and-erase .erase .erase-inner .format .remove button {
+    padding: 2px 15px 2px 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.change-and-erase .erase .erase-inner .format .remove button:hover {
+    background-color: burlywood;
+}
+
+table {
+    background-color: aqua;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+}
+
+table tr td {
+    border-bottom: 1px solid black;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px;
+}
+
+table tr th * {
+    margin: 5px;
+}
+
+table tr th:last-child {
+    border-right: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(129, 233, 233);
+    border-top: 1px solid rgb(182, 182, 182);
+}
+
+.footer .leftF {
+    padding: 5px 10px;
+    line-height: 1;
+    color: #666;
+    font-size: 18px;
+}
+
+.footer .leftF .dong1 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+ul.main-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+ul.main-menu li {
+    margin-right: 20px;
+}
+
+ul.main-menu li a:hover {
+    color: red;
+}
+
+ul.main-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.footer .rightF {
+    padding: 5px 10px;
+    line-height: 1;
+    color: #666;
+    font-size: 25px;
+    display: flex;
+    list-style-type: none;
+}
+
+.footer .rightF i {
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.footer .rightF .li01:hover {
+    color: blue;
+}
+
+.footer .rightF .li02:hover {
+    color: red;
+}
